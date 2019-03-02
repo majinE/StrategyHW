@@ -1,4 +1,13 @@
- import java.util.ArrayList;
+/**
+ * Author: Edgar Reyes
+ * Date: 3/1/2019
+ * Title: HW02
+ * Abstract: This is an example of a Strategy Pattern.
+ */
+
+package Monsters;
+
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -13,5 +22,8 @@ public class Driver {
         for (Monster m : monsters) {
             System.out.println(m);
         }
+
+        System.out.println(monsters.get(0).attackTarget(monsters.get(1)));
+        System.out.println(monsters.get(1).attackTarget(monsters.get(0)));
     }
 }
